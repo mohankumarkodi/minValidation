@@ -1,28 +1,27 @@
-.l-input2{
+.s-input2{
     width:500px;
     height: 40px;
     border: solid 1px grey;
-    max-width: 100%;
 }
-.l-disc{
+.s-disc{
     font-size: 18px;
     font-family: 'roboto';
 
 }
-.l-align-name{
+.s-align-name{
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-items: center;
     min-width: 100%;
 }
-.l-btn-align{
+.s-btn-align{
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-items: center;
 }
-.l-btn{
+.s-btn{
     margin: 20px 0 0 0;
     width: 180px;
     height: 40px;
@@ -34,27 +33,14 @@
     font-size: 20px;
     font-weight: 700;
 }
-.l-error{
+.s-error{
     color: red;
     font-family: 'roboto';
     font-size: 15px;
 }
 
-.heading{
+.s-heading{
     color:black;
     font-family: 'roboto';
     font-size: 20px;
-}
-.password-symbol{
-    border:none;
-    outline: none;
-}
-.container-visable{
-    border-style:solid ;
-    border-width: 1px;
-}
-.eye-button{
-    background-color: transparent;
-    border:none;
-    outline: none;
 }

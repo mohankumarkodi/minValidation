@@ -15,7 +15,7 @@ function Profile() {
     },
     validationSchema: Yup.object({
       username: Yup.string()
-        .min(5, "UserName Should be at least 5 charactes")
+        .min(3, "UserName Should be at least 5 charactes")
         .required("Required*"),
       mobileNumber: Yup.string()
         .min(10, "needed 10 numbers")
@@ -32,10 +32,7 @@ function Profile() {
             <div className="l-inputs-align">
               <p className="names">First Name</p>
               <input
-                value={formikProfile.values.username}
-                onChange={formikProfile.handleChange}
-                id="username"
-                name="username"
+                {...formikProfile.getFieldProps("username")}
                 className="input5"
                 type="text"
                 placeholder="Enter name"
@@ -48,10 +45,7 @@ function Profile() {
             <div className="l-inputs-align">
               <p className="names">Mobile Number</p>
               <input
-                value={formikProfile.values.mobileNumber}
-                onChange={formikProfile.handleChange}
-                id="mobileNumber"
-                name="mobileNumber"
+                {...formikProfile.getFieldProps("mobileNumber")}
                 className="input5 number-input"
                 type="number"
                 placeholder="Enter Mobile"
@@ -66,10 +60,7 @@ function Profile() {
             <div className="l-inputs-align">
               <p className="names">Email</p>
               <input
-                value={formikProfile.values.email}
-                onChange={formikProfile.handleChange}
-                id="email"
-                name="email"
+                {...formikProfile.getFieldProps("email")}
                 className="input5"
                 type="email"
                 placeholder="Enter Email"

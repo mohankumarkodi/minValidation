@@ -76,3 +76,8 @@
 .c-inputs-align{
     min-width: 100%;
 }
+.c-error{
+    color: red;
+    font-family: 'roboto';
+    font-size: 15px;
+}
