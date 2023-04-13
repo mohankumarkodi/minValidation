@@ -4,20 +4,21 @@ import ChangePassword from "./components/ChangePassword";
 import MagazineForm from "./components/Magazine";
 import LoginPage from "./components/LoginPage";
 import SignUp from "./components/signUp";
-import CollapsibleExample from "./components/navBar";
+import CollapsibleExample from "./components/Home";
+import NotFound from "./NotFoung";
+import EmptyCartView from "./components/EmptyCartView";
+import NavbarHeader from "./components/NavBar";
 
 import "./App.css";
 
 function App() {
   return (
     <div>
-
+      <EmptyCartView />
       <CollapsibleExample />
-      <LoginPage />
-      <SignUp />
-      <Profile />
-      <ChangePassword />
-      <MagazineForm />
+     
+      <NotFound />
+      <NavbarHeader />
     </div>
   );
 }

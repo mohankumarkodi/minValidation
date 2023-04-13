@@ -3,6 +3,7 @@
     height: 40px;
     border: solid 1px grey;
     max-width: 100%;
+    border-radius: 5px;
 }
 .l-disc{
     font-size: 18px;
@@ -41,9 +42,11 @@
 }
 
 .heading{
-    color:black;
+    color:rgb(245, 121, 121);
     font-family: 'roboto';
-    font-size: 20px;
+    font-size: 30px;
+    font-size: bolder;
+
 }
 .password-symbol{
     border:none;
@@ -52,9 +55,10 @@
 .container-visable{
     border-style:solid ;
     border-width: 1px;
+    border-radius: 5px;
 }
 .eye-button{
-    background-color: transparent;
+    background-color: white;
     border:none;
     outline: none;
 }

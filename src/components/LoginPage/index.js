@@ -29,11 +29,11 @@ function LoginPage() {
   };
   return (
     <div className="l-align-name">
-      <p className="heading">please login to be continued</p>
+      <p className="heading">PLEASE LOGIN</p>
       <form onSubmit={formik.handleSubmit}>
         <div>
           <div>
-            <p className="l-disc">Username*</p>
+            <p className="l-disc">USERNAME</p>
             <input
               {...formik.getFieldProps("username")}
               className="l-input2"
@@ -44,7 +44,7 @@ function LoginPage() {
             ) : null}
           </div>
           <div>
-            <p className="l-disc">password*</p>
+            <p className="l-disc">PASSWORD</p>
             <div className="container-visable">
               <input
                 {...formik.getFieldProps("password")}
@@ -65,7 +65,7 @@ function LoginPage() {
         </div>
         <div className="l-btn-align">
           <button type="submit" className="l-btn">
-            LogIn
+            LOGIN
           </button>
         </div>
       </form>

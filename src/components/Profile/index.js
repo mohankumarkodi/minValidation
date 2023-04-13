@@ -24,16 +24,16 @@ function Profile() {
     }),
   });
   return (
-    <div className="margin">
-      <div className="aligning">
-        <h1 className="profile_name">Profile</h1>
-        <div className="aligning">
-          <form className="form" onSubmit={formikProfile.handleSubmit}>
-            <div className="l-inputs-align">
-              <p className="names">First Name</p>
+    <div className="p-margin">
+      <div className="p-aligning">
+        <h1 className="p-profile_name">Profile</h1>
+        <div className="p-aligning">
+          <form className="p-form" onSubmit={formikProfile.handleSubmit}>
+            <div className="p-inputs-align">
+              <p className="p-names">First Name</p>
               <input
                 {...formikProfile.getFieldProps("username")}
-                className="input5"
+                className="p-input5"
                 type="text"
                 placeholder="Enter name"
               />
@@ -42,11 +42,11 @@ function Profile() {
                 <div className="p-error">{formikProfile.errors.username}</div>
               ) : null}
             </div>
-            <div className="l-inputs-align">
-              <p className="names">Mobile Number</p>
+            <div className="p-inputs-align">
+              <p className="p-names">Mobile Number</p>
               <input
                 {...formikProfile.getFieldProps("mobileNumber")}
-                className="input5 number-input"
+                className="p-input5 number-input"
                 type="number"
                 placeholder="Enter Mobile"
               />
@@ -57,11 +57,11 @@ function Profile() {
                 </div>
               ) : null}
             </div>
-            <div className="l-inputs-align">
-              <p className="names">Email</p>
+            <div className="p-inputs-align">
+              <p className="p-names">Email</p>
               <input
                 {...formikProfile.getFieldProps("email")}
-                className="input5"
+                className="p-input5"
                 type="email"
                 placeholder="Enter Email"
               />
@@ -71,12 +71,12 @@ function Profile() {
             </div>
 
             <hr />
-            <div className="left-align">
-              <div className="btn-align2">
-                <button className="buttons btn-cancel" type="button">
+            <div className="p-left-align">
+              <div className="p-btn-align2">
+                <button className="p-buttons p-btn-cancel" type="button">
                   cancel
                 </button>
-                <button className="buttons btn-save" type="submit">
+                <button className="p-buttons p-btn-save" type="submit">
                   save
                 </button>
               </div>

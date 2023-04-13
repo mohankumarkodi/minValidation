@@ -23,16 +23,15 @@ function ChangePassword() {
     }),
   });
   return (
-    <div className="margin">
-      <div className="aligning">
-        <h1 className="profile_name">Change Password</h1>
-        <hr />
-        <div className="aligning">
-          <form className="form" onSubmit={formikPassword.handleSubmit}>
+    <div className="c-margin">
+      <div className="c-aligning">
+        {/* <h1 className="c-profile_name">Change Password</h1> */}
+        <div className="c-aligning">
+          <form className="c-form" onSubmit={formikPassword.handleSubmit}>
             <div className="c-inputs-align">
-              <p className="names">Current password</p>
+              <p className="c-names">Current password</p>
               <input
-                className="input1"
+                className="c-input1"
                 {...formikPassword.getFieldProps("currentPassword")}
                 type="password"
                 placeholder="Enter current password"
@@ -45,10 +44,10 @@ function ChangePassword() {
               ) : null}
             </div>
             <div className="c-inputs-align">
-              <p className="names">Enter New Password</p>
+              <p className="c-names">Enter New Password</p>
               <input
                 {...formikPassword.getFieldProps("newPassword")}
-                className="input1"
+                className="c-input1"
                 type="password"
                 placeholder="Enter New Password"
               />
@@ -60,10 +59,10 @@ function ChangePassword() {
               ) : null}
             </div>
             <div className="c-inputs-align">
-              <p className="names">Re-Enter New Password</p>
+              <p className="c-names">Re-Enter New Password</p>
               <input
                 {...formikPassword.getFieldProps("reEnterNewPassword")}
-                className="input1"
+                className="c-input1"
                 type="password"
                 placeholder="Re-Enter New Password"
               />
@@ -76,18 +75,19 @@ function ChangePassword() {
             </div>
 
             <hr />
-            <div className="left-align">
-              <div className="btn-align3">
-                <button className="buttons btn-cancel" type="button">
+            <div className="c-left-align">
+              <div className="c-btn-align3">
+                <button className="c-buttons c-btn-cancel" type="button">
                   cancel
                 </button>
-                <button className="buttons btn-save" type="submit">
+                <button className="c-buttons c-btn-save" type="submit">
                   save
                 </button>
               </div>
             </div>
           </form>
         </div>
+        <img className="img" src="https://cdn.mos.cms.futurecdn.net/5fz9SMYxWbv44jFVcD4vmd-970-80.jpg.webp"/>
       </div>
     </div>
   );

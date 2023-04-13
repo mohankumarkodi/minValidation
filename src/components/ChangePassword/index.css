@@ -1,41 +1,48 @@
 
 /* /tps://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap'); */
-.margin{
+.c-margin{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
+    /* background-image: radial-gradient(rgb(235, 53, 83),rgb(10, 56, 131),black,black); */
+    background-color: rgb(45, 44, 46);
+    
+    padding: 50px;
+
 }
-.names{
-    color: #282c34;
+.c-names{
+    color:#ffffff;
     font-family: "roboto";
     font-size: 30px;
 }
-.input1{
-
+.c-input1{
+    padding-left: 30px;
     height: 50px;
-    border-color: darkgray;
-    border-style: solid;
+    border:none;
     border-width: 2px;
     font-size: 20px;
     width: 100%;
-
+    background-color:#ffffff;
+    border-radius: 8px;
+    opacity: 0.5;
+    
 }
-.aligning{
+.c-aligning{
     width: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.profile_name{
-    color: #282c34;
+.c-profile_name{
+    color: white;
     font-family: "roboto";
     font-size: 50px;
 }
-.buttons{
+.c-buttons{
     color: white;
     border-width: 0px;
     width: 100px;
@@ -44,29 +51,38 @@
     font-size: 20px;
     align-items: end;
 }
-.btn-cancel{
-    background: lightslategray;
+.c-btn-cancel{
+    background: rgb(225, 134, 81);
     margin: 20px;
 }
-.btn-save{
+.c-btn-save{
     background: lightgreen;
     margin: 20px;
 }
-.form{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
+.c-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-     width: 100%;
-
+    width: 100%;
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    padding: 50px;
+    border-radius: 25px;
  }
-.btn-align3{
+.c-btn-align3{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    ;
+    
 }
-.left-align{
+.img{
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 100px;
+}
+.c-left-align{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
